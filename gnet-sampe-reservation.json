@@ -1,0 +1,91 @@
+{
+  "reservationDate": "-07:00",
+  "affiliateReservation": {
+    "action": "NEW",
+    "status": "BOOKING_REQUEST",
+    "requesterId": "gnettest",
+    "requesterResNo": "1715016686",
+    "providerId": "LATtest"
+  },
+  "reservationType": "REGULAR",
+  "status": "BOOKING_REQUEST",
+  "runType": "Airport",
+  "passengerCount": "2",
+  "totalTripDuration": "",
+  "eventName": "LA Convention Center",
+  "passengers": [
+    {
+      "firstName": "Alex",
+      "lastName": "Smith",
+      "email": "alex@example.com",
+      "phoneNumber": "+155550044444",
+      "phones": [
+        {
+          "number": "+155550044444",
+          "type": "mobile"
+        }
+      ]
+    }
+  ],
+  "namesignInstructions": "Mr. Adam",
+  "locations": {
+    "pickup": {
+      "locationType": "address",
+      "address": "123 S Beverly Dr, Beverly Hills, CA 90212, USA",
+      "address1": "123 South Beverly Drive",
+      "city": "Beverly Hills",
+      "state": "CA",
+      "zipCode": "90212",
+      "lat": 34.0664703,
+      "lon": -118.3993243,
+      "country": "US",
+      "landmark": "123 S Beverly Dr",
+      "specialInstructions": "",
+      "time": "2024-08-03T10:27:22"
+    },
+    "dropOff": {
+      "locationType": "airport",
+      "address": "LAX",
+      "landmark": "LAX Los Angeles Intl",
+      "country": "United States",
+      "flightInfo": {
+        "flightNumber": "123",
+        "airlineCode": "UA"
+      },
+      "meetAndGreet": "False",
+      "specialInstructions": ""
+    },
+    "stops": [
+      {
+        "locationType": "address",
+        "address": "333 Santa Monica Blvd, Santa Monica, CA 90401, USA",
+        "address1": "333 Santa Monica Boulevard",
+        "city": "Santa Monica",
+        "state": "CA",
+        "zipCode": "90401",
+        "lat": 34.0164474,
+        "lon": -118.4954529,
+        "country": "US",
+        "landmark": "333 Santa Monica Blvd",
+        "stopNumber": 1,
+        "specialInstructions": "See Mr. Jones"
+      }
+    ]
+  },
+  "preferredVehicleType": "SEDAN",
+  "specialInstructions": "- Carseat needed ",
+  "sourceVendor": "GRIDD",
+  "origination": "gBook",
+  "notes": [
+    {
+      "message": "VIP Client",
+      "context": "AFFILIATE"
+    },
+    {
+      "message": "Drop off at Terminal 4 ",
+      "context": "DRIVER"
+    }
+  ],
+  "submitMode": "WAIT",
+  "transactionId": "935a1056-644c-4e82-9a1a-6099efdd056b"
+}
