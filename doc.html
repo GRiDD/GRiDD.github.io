@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://gnet.docs.apiary.io/#/reference/0/send-reservation-request -->
+<html class="aui-root js jsDomReady"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>GNet Integration API · Apiary</title>
+  
+
+  <meta name="google-site-verification" content="2xk1RgCJ7lGo7pJ826cos7moPjcExpih-yXTxfTJ7KU">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="description" content="A place where APIs are kept.">
+  <meta name="author" content="Apiary">
+
+  <meta name="referrer" content="origin">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="https://static.apiary.io/assets/3aqvBs0H.ico">
+  <link rel="apple-touch-icon-precomposed" href="https://static.apiary.io/assets/2LhCErCD.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://static.apiary.io/assets/kcRGh7aY.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://static.apiary.io/assets/3y9KoZlJ.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://static.apiary.io/assets/fX9wgjhh.png">
+
+  <!-- Styles -->
+  <link href="./GNet Integration API · Apiary_files/main.css" rel="stylesheet" crossorigin="anonymous"><link rel="stylesheet" crossorigin="anonymous" href="./GNet Integration API · Apiary_files/docsV4-d58f319a.css">  <!-- /Styles -->
+
+</head>
+
+<body class="API_DOCUMENTATION_V4 appBody themeDark extraLargeWindow docs-v4PageView">
+  <div id="application" class="app" data-peoplemanagerready="1">
+
+    <noscript>
+      <div class="noscript">
+        <a href="https://apiary.io/" title="Apiary Home">
+          <img src="https://static.apiary.io/assets/v6Zkz37_.png" alt="Apiary Logo" class="noscript__logo">
+        </a>
+
+        <div class="noscript__header">
+          <span class="noscript__jslogo"></span>
+          JavaScript is disabled
+        </div>
+
+        <div class="noscript__help">
+          Please continue <a href="http://enable-javascript.com/" class="noscript__link">here</a> to find out how to
+          <br>
+          enable it in your browser.
+        </div>
+      </div>
+    </noscript>
+
+    
+    
+        <!-- Header -->
+    <div id="applicationHeaderContainer"><div id="applicationHeader" class="applicationHeader responsiveHeader">
+  <a href="https://apiary.io/" class="headerApiLogo"></a>
+  <div id="headerResponsiveContainer" class="headerResponsiveContainer"><div class="headerLinks">
+  <ul class="headerLinksList">
+
+          <!-- Link -->
+      <li class="headerLinkContainer">
+        <a href="https://gnet.docs.apiary.io/" class="headerLink  selected apiDocumentation">
+          <!-- Icon -->
+                    <!-- /Icon -->
+
+          <!-- Text -->
+                      <span class="headerLinkText">
+              Documentation            </span>
+                    <!-- /Text -->
+        </a>
+      </li>
+      <!-- /Link -->
+          <!-- Link -->
+      <li class="headerLinkContainer">
+        <a href="https://gnet.docs.apiary.io/traffic" class="headerLink  inspector">
+          <!-- Icon -->
+                    <!-- /Icon -->
+
+          <!-- Text -->
+                      <span class="headerLinkText">
+              Inspector            </span>
+                    <!-- /Text -->
+        </a>
+      </li>
+      <!-- /Link -->
+    
+  </ul>
+</div></div>
+<div class="headerApiSwitch noSelect disabled js-ready">
+  <div class="headerApiSwitchToggleLine">
+    <!-- Icon -->
+    <div class="headerApiSwitchIconContainer">
+          </div>
+    <!-- /Icon -->
+
+    <h3 class="row headerApiSwitchName">
+      GNet Integration API    </h3>
+
+    <span class="row headerApiSwitchDescription">
+      <!-- Owner -->
+      <span class="headerApiSwitchOwner">swathigridd </span>
+      <!-- Owner -->
+
+      <span class="headerApiSwitchBullet">•</span>
+
+      <!-- Subdomain -->
+      <span class="headerApiSwitchSubdomain">gnet</span>
+      <!-- /Subdomain -->
+    </span>
+
+    
+  </div>
+  <!-- /toggleLine -->
+
+  <!-- List -->
+  <div class="headerApiSwitchList hidden">
+
+        <!-- CreateApiButton -->
+    <a href="https://gnet.docs.apiary.io/create-api" class="headerCreateApiButton ajaxLink cacheable createApi">
+      <span class="headerCreateApiIcon"></span>
+      <span class="headerCreateApiText">Create New API Project</span>
+    </a>
+    <!-- /CreateApiButton -->
+    
+  </div>
+  <!-- /List -->
+
+</div><div class="headerHelp">
+  <span class="headerHelpIcon"></span>
+  <span class="headerHelpTooltip tooltip">Help</span>
+</div><div class="headerSpacer"></div><div class="headerUser js-ready">
+      <div class="headerUserGuest">
+      <p class="headerUserGuestText">Apiary Powered Documentation</p>
+      <p class="headerUserGuestLogin">
+        <a href="https://login.apiary.io/login?redirect=https%3A%2F%2Fgnet.docs.apiary.io%2F%23%2Freference%2F0%2Fsend-reservation-request">Sign in</a> with Apiary account.
+      </p>
+    </div>
+  </div></div></div>
+    <!-- /Header -->
+
+        <div id="applicationContent" class="hidden hybrid appBody">
+      <!-- no content here -->
+    </div>
+
+  </div><!-- //#application -->
+
+  <div class="fn">
+    
+<div id="docsV4" data-apiary-ui-version="0.38.0"><div class="docs docs-defaultLayout aui-root docs-defaultLayout--responsive" data-state-version="43"><div class="docs-defaultLayout__header"><button type="button" class="aui-button aui-button--clear docs-defaultLayout__menuOpener" aria-label="open Table Of Contents" aria-controls="docs-toc" aria-expanded="false" aria-haspopup="true"><i class="aui-i-menu aui-i--lg" aria-hidden="true"></i></button></div><div class="docs-defaultLayout__menu docs-defaultLayout__left"><section class="docs-toc docs-defaultLayout__toc" role="navigation" id="docs-toc"><section class="docs-tocIntroduction"><h3 class="aui-h3 docs-toc__sectionTitle docs-tocIntroduction__sectionTitle" id="docs-toc-introduction"><a href="https://gnet.docs.apiary.io/#/introduction">Introduction</a></h3><nav><ul class="aui-menu vertical docs-tocIndexList docs-tocIndexList--topLevel"><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/environments"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/environments">Environments</a></li><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/sending-reservations"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations">Sending Reservations</a><ul class="aui-menu vertical docs-tocIndexList nested docs-tocIndexList--inner"><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/sending-reservations/affiliate-reservation-section"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations/affiliate-reservation-section">affiliateReservation section</a></li><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/sending-reservations/addresses"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations/addresses">Addresses</a></li><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/sending-reservations/passengers"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations/passengers">Passengers</a></li><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/sending-reservations/notes"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations/notes">Notes</a></li><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/sending-reservations/pickup-time-format"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations/pickup-time-format">Pickup Time format</a></li></ul></li><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/receiving-reservations"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/receiving-reservations">Receiving Reservations</a></li><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/object-model"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/object-model">Object Model</a></li><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/status-codes"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/status-codes">Status Codes</a></li><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/vehicles"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/vehicles">Vehicles</a></li><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/http-status-codes"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/http-status-codes">HTTP Status Codes</a></li><li class="docs-toc__item docs-tocIndex" id="docs-toc-introduction/webhook-callbacks"><a class="docs-tocIndex__name" href="https://gnet.docs.apiary.io/#/introduction/webhook-callbacks">Webhook callbacks</a></li></ul></nav></section><section class="docs-tocReference"><h3 class="aui-h3 docs-toc__sectionTitle docs-tocReference__sectionTitle" id="docs-toc-reference"><a href="https://gnet.docs.apiary.io/#/reference">Reference</a></h3><nav><ul class="aui-menu vertical docs-tocResourceList docs-tocResourceList--topLevel"><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/authentication-get-token"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/authentication-get-token"><span class="docs-tocResource__name">Authentication Get Token</span></a></li><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/authentication-release-token"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/authentication-release-token"><span class="docs-tocResource__name">Authentication Release Token</span></a></li><li class="docs-toc__item docs-tocResource docs-toc__item--isActive" id="docs-toc-reference/0/send-reservation-request"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/send-reservation-request"><span class="docs-tocResource__name">Send Reservation Request</span></a></li><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/get-reservation-by-transaction-id"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/get-reservation-by-transaction-id"><span class="docs-tocResource__name">Get Reservation by Transaction ID</span></a></li><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/get-reservation-by-reservation-id"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/get-reservation-by-reservation-id"><span class="docs-tocResource__name">Get Reservation by Reservation Id</span></a></li><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/provider-system-update-by-reservation-no"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/provider-system-update-by-reservation-no"><span class="docs-tocResource__name">Provider System Update by Reservation No</span></a></li><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/provider-system-callback-by-transaction-id"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/provider-system-callback-by-transaction-id"><span class="docs-tocResource__name">Provider System Callback by Transaction ID</span></a></li><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/cancel-reservation-by-reservation"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/cancel-reservation-by-reservation"><span class="docs-tocResource__name">Cancel Reservation by Reservation#</span></a></li><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/cancel-reservation-by-transaction-id"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/cancel-reservation-by-transaction-id"><span class="docs-tocResource__name">Cancel Reservation by TransactionId</span></a></li><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/get-vehicle-chauffeur-location-by-transaction-id"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-transaction-id"><span class="docs-tocResource__name">Get Vehicle/Chauffeur Location by TransactionID</span></a></li><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/get-vehicle-chauffeur-location-by-res-no"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-res-no"><span class="docs-tocResource__name">Get Vehicle/Chauffeur Location by ResNo</span></a></li><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/get-vehicle-chauffeur-location-by-array-of-reservation-s"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-array-of-reservation-s"><span class="docs-tocResource__name">Get Vehicle/Chauffeur Location by Array of reservation #s</span></a></li><li class="docs-toc__item docs-tocResource" id="docs-toc-reference/0/retry-transaction"><a class="docs-tocResource__name" href="https://gnet.docs.apiary.io/#/reference/0/retry-transaction"><span class="docs-tocResource__name">Retry Transaction</span></a></li></ul></nav></section></section></div><div class="docs-defaultLayout__menuOverlay" tabindex="0" role="button" aria-controls="docs-toc" aria-expanded="true" aria-label="close Table Of Contents"></div><div class="docs-defaultLayout__middle"><section class="docs-humanColumn docs-defaultLayout__humanColumn docs-defaultLayout__humanColumn--fluid"><section class="docs-api"><header class="docs-header"><h1 class="docs-header__apiName">GNet Integration API</h1></header><section class="docs-apiIntroduction"><h3 id="introduction" tabindex="-1" class="docs-hcAnchor docs-apiIntroduction__title"><a class="docs-hcAnchor__link" aria-labelledby="introduction" href="https://gnet.docs.apiary.io/#/introduction"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Introduction</h3><section class="docs-apiIntroduction__text"><span> <p>
+<b>GNet Platform</b><br>
+GNet platform is an Open Distribution Network for ground transportation providers to send and receive reservations electronically. GNet acts as a messenger service that transmits reservations into target reservation systems and keeps these reservations synchronized until trip completion.<br><br>
+GNet is a B2B platform interfacing mainly with software companies who service Ground Transportation and Corporate Travel Service providers.<br><br>
+Every Transportation company is associated with a unique GRiDD ID.  This ID is used to identify the providing company and proper routing to the target back-office reservation system.<br><br>
+GNet API services are RESTful.
+<br>
+<b>Actors<br></b>
+</p>
+<li>Requester- An entity sending a reservation request to be fulfilled</li>
+<li>Provider- An operator who will fulfill the reservation.</li>
+<li>GNet - Platform to exchange reservations and provide real-time tracking.</li>
+<li>Driver - Chauffeur</li>
+<li>Vendor - Software Vendors - Fasttrak Cloud, Livery Coach, Transdev, Hudson etc.</li>
+<li>Passenger - Primary passenger or traveler</li>
+<li>Account - Client account or requester account number</li>
+<p><b>Requester Pre-requisites</b>
+A requester must be connected to the GRiDD Platform™ and be assigned a GRiDD ID for reservations to be exchanged.
+Requester might be a Transportation Provider who is sending a reservation via their reservation system to their affiliate provider who utilizes a different reservation system.<br>
+Requester may also be a Travel Management software and can use any choice of technology to integrate with the GRiDD API.
+<br>
+<b>Provider Pre-requisites</b>
+Provider must be connected to the GNet Platform™ and be assigned a GRiDD ID for reservations to be exchanged.
+Provider may use reservation systems that the GRiDD platform is integrated into.
+<br></p>
+</span><h2 id="introduction/environments" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/environments" href="https://gnet.docs.apiary.io/#/introduction/environments"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Environments</h2><span>
+<p>
+Production Environment: https://gnet.grdd.net/platform.svc<br>
+Test Environment: https://gtest.grdd.net/platform.svc<br>
+</p><p>Online API help URL : <a href="https://gtest.grdd.net/platform.svc/help" target="_blank" rel="noopener noreferrer">https://gtest.grdd.net/platform.svc/help</a><br></p>
+<p></p>
+</span><h2 id="introduction/sending-reservations" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/sending-reservations" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Sending Reservations</h2><span>
+<p> One standard format needed for trip payloads to be sent over GNet to any target dispatch system.  Follow the recommended guidelines and you will have a glitch free integration.</p>
+</span><h3 id="introduction/sending-reservations/affiliate-reservation-section" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/sending-reservations/affiliate-reservation-section" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations/affiliate-reservation-section"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>1. affiliateReservation section</h3><span>
+<p>This is the header section of the payload.  It contains the GNet member Id of the sender, the receiver and their reservation numbers. affiliateReservation.action field serves as the command field as to what the payload is for.  The valid values for the action data field are NEW, UPDATE, and CANCEL.</p>
+<pre><code class="hljs">affiliateReservation.action , affiliateReservation.requesterId, affiliateReservation.providerId, and affiliateReservation.requesterResNo are required data items when submitting a payload to GNet.
+
+If submitting an UPDATE or CANCEL, then affiliateReservation.providerResNo is also required.
+</code></pre>
+</span><h3 id="introduction/sending-reservations/addresses" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/sending-reservations/addresses" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations/addresses"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>2. Addresses</h3><span>
+<h4>Regular Addresses</h4>
+<p>Regular addresses are passed in two different formats in every address section.<br>
+</p><li>locationType="ADDRESS"</li>
+<li>Full one line address with street address, city , state, zip included. (no apartment numbers, no notes should be present)</li>
+<li>Same address broken down to Street address, City, State, Zip, and Country.</li><p></p>
+<h4>Airport Addresses</h4>
+<p>Airport addresses require IATA codes for airports and airlines.  Use of IATA codes is required, otherwise airport trips cannot be understood.</p>
+<li>locationType="AIRPORT"</li>
+   <li>3 Character IATA code for for the airport to be used in address field.</li>
+   <li>2 Character IATA code for the airline to be used in the airlineCode field.</li>
+   <li>Actual Flight number to be in the flightNumber field, do not use TBD, etc in that field, leave empty of unknown.</li>
+   <li>If the airport is a FBO, then set FBO field to "True" in that leg. Airline code 00 is also another indication that the pickup or drop off is a FBO.</li>
+</span><h3 id="introduction/sending-reservations/passengers" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/sending-reservations/passengers" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations/passengers"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>3.  Passengers</h3><span>
+<p>There must be at least one passenger in the passenger list.  The passenger array is only limited to the target system's limits and can handle as many passengers in the list as needed.
+Passenger First Name, Last Name are required. Phone numbers are recommended, but if none is supplied, and target system requires it, then GNet will use the Sender's main office number as an alternate number.</p>
+</span><h3 id="introduction/sending-reservations/notes" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/sending-reservations/notes" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations/notes"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>4. Notes</h3><span>
+<p>There different note sections in each payload.</p>
+<li>Each address section has a specialInstructions field which is the notes section for that address.</li>
+    <li>Each trip payload has a specialInstructions at the root level which holds the main trip notes.</li>
+    <li>Notes array at the root level holds <b>Driver Notes</b> and <b>Affiliate Notes</b></li>
+</span><h3 id="introduction/sending-reservations/pickup-time-format" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/sending-reservations/pickup-time-format" href="https://gnet.docs.apiary.io/#/introduction/sending-reservations/pickup-time-format"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>5. Pickup Time format</h3><span>
+<p>Pickup, Drop off, and Stops Date/time are local to pickup location and contain no timezone setting.  The format for these fields are YYYY-MM-DDTHH:mm:ss , ex: 2023-08-08T19:00:00</p>
+</span><h2 id="introduction/receiving-reservations" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/receiving-reservations" href="https://gnet.docs.apiary.io/#/introduction/receiving-reservations"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Receiving Reservations</h2><span>
+<p>If an existing API does not exist for GNet integration, then you can consume GNet's object model for receiving trips.
+GNet requires 1 web service on the receive side to accept NEW, UPDATE or CANCEL requests all in one web service.  In order to provide status updates for incoming trips, you would need to call providerUpdateByResNo webservice on GNet.  This endpoint should be called when there is change in Status, Driver Info, Vehicle Info,  Charge line items, and Total</p>
+<p>GNet team will work with your technical team to determine how to communicate with your webservice, capture confirmation numbers, as well as error messages in case a trip has to be rejected.</p>
+<p>Web service receiving trip payloads from GNet must look at affiliateReservation section to determine if the payload is requesting a NEW trip, or its an UPDATE or a CANCEL Request for an existing trip.</p>
+<p>affiliateReservation.action tells the web service you are building, what needs to be done.  NEW means its a new trip, UPDATE is an update of an existing trip, and CANCEL is a request to CANCEL a trip</p>
+<p>affiliateReservation.requesterId is the GNet ID of the sending company
+affiliateReservation.requesterResNo is the reservation# of the sending company
+affiliateReservation.providerId is the GNet ID of the receiving company
+affiliateReservation.providerResNo is the reservation# of the receiving company, this field will be populated if action=UPDATE or CANCEL</p>
+</span><h2 id="introduction/object-model" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/object-model" href="https://gnet.docs.apiary.io/#/introduction/object-model"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Object Model</h2><span>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+<th>Format/type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>affiliateReservation.action</td>
+<td>Yes</td>
+<td>NEW or UPDATE or CANCEL</td>
+<td>string</td>
+</tr>
+<tr>
+<td>affiliateReservation.requesterId</td>
+<td>Yes</td>
+<td>GRiDD Id of requestor</td>
+<td>String</td>
+</tr>
+<tr>
+<td>affiliateReservation.providerId</td>
+<td>Yes</td>
+<td>GRiDD Id of provider</td>
+<td>String</td>
+</tr>
+<tr>
+<td>affiliateReservation.requesterResNo</td>
+<td>Yes</td>
+<td>Reservation number of requester</td>
+<td>string</td>
+</tr>
+<tr>
+<td>affiliateReservation.providerResNo</td>
+<td>No</td>
+<td>Reservation number of Provider, fills in once a reservation is successfully submitted.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>affiliateReservation.status</td>
+<td>No</td>
+<td>Status code of reservation, if any errors in communication, this will be set to FAILED</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.pickup.time</td>
+<td>Yes</td>
+<td>Local time for Pick up address. Dates and Times are based on local time of pickup location</td>
+<td>String: YYYY-MM-DDTHH:mm:ss</td>
+</tr>
+<tr>
+<td>locations.pickup.locationType</td>
+<td>Yes</td>
+<td>Valid values are 'ADDRESS' , 'AIRPORT'</td>
+<td>String</td>
+</tr>
+<tr>
+<td>locations.pickup.FBO</td>
+<td>No</td>
+<td>Valid values 'True' , or blank</td>
+<td>String</td>
+</tr>
+<tr>
+<td>locations.pickup.landmark</td>
+<td>No</td>
+<td>Landmark name for pickup address</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.pickup.adress</td>
+<td>Yes</td>
+<td>For Airport trips, the Airport CODE goes into address field</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.pickup.adress1</td>
+<td>Yes</td>
+<td>Street address of pickup</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.pickup.adress2</td>
+<td>Yes</td>
+<td>Street address 2 of pickup</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.pickup.city</td>
+<td>Yes</td>
+<td>City</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.pickup.state</td>
+<td>Yes</td>
+<td>State</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.pickup.zipCode</td>
+<td>Yes</td>
+<td>Zip Code / Postal Code</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.pickup.country</td>
+<td>Yes</td>
+<td>Country</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.pickup.specialInstructions</td>
+<td>No</td>
+<td>Pickup Notes and instructions</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.pickup.flightInfo</td>
+<td>Yes</td>
+<td>flight information, only requred if an airport trip</td>
+<td>object</td>
+</tr>
+<tr>
+<td>locations.pickup.flightInfo.flightNumber</td>
+<td>No</td>
+<td>Flight Number</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.pickup.flightInfo.airlineCode</td>
+<td>No</td>
+<td>Flight Number</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.dropOff.locationType</td>
+<td>Yes</td>
+<td>Valid values 'ADDRESS' , 'AIRPORT'</td>
+<td>String</td>
+</tr>
+<tr>
+<td>locations.dropOff.FBO</td>
+<td>No</td>
+<td>Valid values 'True' , or blank</td>
+<td>String</td>
+</tr>
+<tr>
+<td>locations.dropOff.landmark</td>
+<td>No</td>
+<td>Landmark name for address</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.dropOff.adress1</td>
+<td>Yes</td>
+<td>Street address of drop off</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.dropOff.adress2</td>
+<td>No</td>
+<td>Street address 2 of drop off</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.dropOff.city</td>
+<td>Yes</td>
+<td>City</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.dropOff.state</td>
+<td>Yes</td>
+<td>State</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.dropOff.zipCode</td>
+<td>Yes</td>
+<td>Zip Code / Postal Code</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.dropOff.country</td>
+<td>Yes</td>
+<td>Country</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.dropOff.specialInstructions</td>
+<td>No</td>
+<td>Pickup Notes and instructions</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.dropOff.flightInfo</td>
+<td>Yes</td>
+<td>flight information, only requred if an airport trip</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.dropOff.flightInfo.flightNumber</td>
+<td>No</td>
+<td>Flight Number</td>
+<td>string</td>
+</tr>
+<tr>
+<td>locations.dropOff.flightInfo.airlineCode</td>
+<td>No</td>
+<td>Flight Number</td>
+<td>string</td>
+</tr>
+<tr>
+<td>passengerCount</td>
+<td>Yes</td>
+<td>Number of passengers</td>
+<td>string</td>
+</tr>
+<tr>
+<td>passengers.email</td>
+<td>Ni</td>
+<td>Pasenger Email</td>
+<td>string</td>
+</tr>
+<tr>
+<td>passengers.firstName</td>
+<td>Yes</td>
+<td>Passenger's first name</td>
+<td>string</td>
+</tr>
+<tr>
+<td>passengers.lastName</td>
+<td>Yes</td>
+<td>Passenger's last name</td>
+<td>string</td>
+</tr>
+<tr>
+<td>passengers.alias</td>
+<td>No</td>
+<td>Passenger's Alias name</td>
+<td>string</td>
+</tr>
+<tr>
+<td>passengers.phones</td>
+<td>Yes</td>
+<td>Array of phone numbers for passenger</td>
+<td>object</td>
+</tr>
+<tr>
+<td>passengers.phones.number</td>
+<td>Yes</td>
+<td>passenger phone number</td>
+<td>string</td>
+</tr>
+<tr>
+<td>passengers.phones.type</td>
+<td>Yes</td>
+<td>values are either 'mobile' or 'landline'</td>
+<td>string</td>
+</tr>
+<tr>
+<td>preferredVehicleType</td>
+<td>Yes</td>
+<td>Requesting Vehicle type, see list of GNet vehicle types supported.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>reservationType</td>
+<td>Yes</td>
+<td>can be: REGULAR , ONDEMAND, or QUOTE</td>
+<td>string</td>
+</tr>
+<tr>
+<td>runType</td>
+<td>No</td>
+<td>Can be: TRANSPORT, AIRPORT, HOURLY</td>
+<td>string</td>
+</tr>
+<tr>
+<td>totalAmount</td>
+<td>No</td>
+<td>returns estimated total cost of trip</td>
+<td>string</td>
+</tr>
+<tr>
+<td>specialInstructions</td>
+<td>No</td>
+<td>Trip Notes and Instructions</td>
+<td>string</td>
+</tr>
+<tr>
+<td>notes</td>
+<td>No</td>
+<td>an array that holds affiliate notes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>notes.user</td>
+<td>No</td>
+<td>optional- user id of the person sending message</td>
+<td>string</td>
+</tr>
+<tr>
+<td>notes.context</td>
+<td>No</td>
+<td>should be set to 'AFFILIATE'</td>
+<td>string</td>
+</tr>
+<tr>
+<td>notes.message</td>
+<td>No</td>
+<td>Actual notes and instructions from Affiliate</td>
+<td>string</td>
+</tr>
+<tr>
+<td>totalTripDuration</td>
+<td>No</td>
+<td>This is in MINUTES.  If an hourly trip, then you have to set the number of estimated  minutes for the trip</td>
+<td>string</td>
+</tr>
+<tr>
+<td>account</td>
+<td>No</td>
+<td>Account information of SENDER in RECIEVER system</td>
+<td>object</td>
+</tr>
+<tr>
+<td>account.accountNumber</td>
+<td>No</td>
+<td>Customer ID / Account Number of SENDER in the RECEIVER system.  (if this value exists, then it wil be used.  If not, then system will look on the PROVIDER setting to see if they have set an account number for this relationship, if so, that account number is used.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>account.accountName</td>
+<td>No</td>
+<td>Name of the SENDER</td>
+<td>string</td>
+</tr>
+<tr>
+<td>account.callerName</td>
+<td>No</td>
+<td>Name of the Caller</td>
+<td>string</td>
+</tr>
+<tr>
+<td>account.callerEmail</td>
+<td>No</td>
+<td>Email of the Caller</td>
+<td>string</td>
+</tr>
+<tr>
+<td>account.callerNumber</td>
+<td>No</td>
+<td>Phone number of the caller</td>
+<td>string</td>
+</tr>
+<tr>
+<td>transactionId</td>
+<td>Yes</td>
+<td>when updating a reservation, a transaction id is required to be filled in, NEW reservations should have this field as blank</td>
+<td>string</td>
+</tr>
+<tr>
+<td>submitMode</td>
+<td>No</td>
+<td>To process the reservation synchronously and wait for result.  value must be WAIT in order to process Synchronously, leave blank otherwise</td>
+<td>string</td>
+</tr>
+<tr>
+<td>namesignInstructions</td>
+<td>No</td>
+<td>Name Sign Instructions</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+</span><h2 id="introduction/status-codes" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/status-codes" href="https://gnet.docs.apiary.io/#/introduction/status-codes"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Status Codes</h2><span>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QUOTE</td>
+<td>Quotation Request</td>
+</tr>
+<tr>
+<td>BOOKING_REQUEST</td>
+<td>Trip Request Submitted</td>
+</tr>
+<tr>
+<td>ACKNOWLEDGED</td>
+<td>Chauffeur Acknowledged</td>
+</tr>
+<tr>
+<td>CONFIRMED</td>
+<td>Trip Confirmed</td>
+</tr>
+<tr>
+<td>ASSIGNED</td>
+<td>Chauffeur Assigned</td>
+</tr>
+<tr>
+<td>EN_ROUTE</td>
+<td>Chauffeur En-route to pickup</td>
+</tr>
+<tr>
+<td>ON_LOCATION</td>
+<td>Chauffeur On Location</td>
+</tr>
+<tr>
+<td>PASSENGER_ON_BOARD</td>
+<td>Passenger On Board</td>
+</tr>
+<tr>
+<td>STOP</td>
+<td>At a trip stop</td>
+</tr>
+<tr>
+<td>CLOSE</td>
+<td>Trip Closed</td>
+</tr>
+<tr>
+<td>COMPLETE</td>
+<td>Passenger Dropped</td>
+</tr>
+<tr>
+<td>CANCEL</td>
+<td>Trip Cancelled</td>
+</tr>
+<tr>
+<td>REJECT</td>
+<td>Provider Rejected</td>
+</tr>
+<tr>
+<td>NO_SHOW</td>
+<td>Passenger No Show</td>
+</tr>
+<tr>
+<td>FAILED</td>
+<td>Transmission Failed / Gateway Failed</td>
+</tr>
+</tbody>
+</table>
+</span><h2 id="introduction/vehicles" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/vehicles" href="https://gnet.docs.apiary.io/#/introduction/vehicles"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Vehicles</h2><span>
+<table>
+<thead>
+<tr>
+<th>Vehicle Type Code</th>
+<th>Capacity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SEDAN_LUX</td>
+<td>2</td>
+<td>Sedan (Luxury)</td>
+</tr>
+<tr>
+<td>SEDAN_CORP</td>
+<td>2</td>
+<td>Sedan (corporate)</td>
+</tr>
+<tr>
+<td>SEDAN</td>
+<td>2</td>
+<td>Sedan (Luxury)</td>
+</tr>
+<tr>
+<td>SEDAN_HYBRID</td>
+<td>2</td>
+<td>Sedan (Hybrid)</td>
+</tr>
+<tr>
+<td>SUV_LUX</td>
+<td>3</td>
+<td>SUV - (Luxury)</td>
+</tr>
+<tr>
+<td>SUV</td>
+<td>3</td>
+<td>SUV - (Standard)</td>
+</tr>
+<tr>
+<td>SUV_CORP</td>
+<td>3</td>
+<td>SUV - (Corporate)</td>
+</tr>
+<tr>
+<td>SUV_SPECIALTY</td>
+<td>6</td>
+<td>SUV - (Specialty) i.e. Hummer</td>
+</tr>
+<tr>
+<td>SPECIALTY</td>
+<td>6</td>
+<td>(Specialty Vehicle) i.e. Classic Rolls Royce</td>
+</tr>
+<tr>
+<td>LIMO</td>
+<td>1-10</td>
+<td>Limousine</td>
+</tr>
+<tr>
+<td>VAN_MINI</td>
+<td>8</td>
+<td>Mini Van (1-8 pass)</td>
+</tr>
+<tr>
+<td>VAN_CARGO</td>
+<td>10</td>
+<td>Van (Cargo/Luggage)</td>
+</tr>
+<tr>
+<td>VAN_CORP</td>
+<td>10</td>
+<td>Van (Corporate)</td>
+</tr>
+<tr>
+<td>SPRINTER</td>
+<td>14</td>
+<td>SPRINTER</td>
+</tr>
+<tr>
+<td>BUS_MINI</td>
+<td>25</td>
+<td>Mini-Bus (20-35)</td>
+</tr>
+<tr>
+<td>BUS</td>
+<td>1-35</td>
+<td>Bus (26-31)</td>
+</tr>
+<tr>
+<td>COACH</td>
+<td>1-60</td>
+<td>Motor Coach</td>
+</tr>
+<tr>
+<td>GREETER</td>
+<td>1-100</td>
+<td>Greeter</td>
+</tr>
+</tbody>
+</table>
+</span><h2 id="introduction/http-status-codes" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/http-status-codes" href="https://gnet.docs.apiary.io/#/introduction/http-status-codes"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>HTTP Status Codes</h2><span>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Bad Request</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized</td>
+</tr>
+</tbody>
+</table>
+</span><h2 id="introduction/webhook-callbacks" tabindex="-1" class="docs-hcAnchor"><a class="docs-hcAnchor__link" aria-labelledby="introduction/webhook-callbacks" href="https://gnet.docs.apiary.io/#/introduction/webhook-callbacks"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Webhook callbacks</h2><span>
+<p>GNet platform provides real-time callbacks on any changes that occur on sent trips.  These changes can be Status Codes, Chauffeur info, Vehicle Info, Closing Costs and Total Amount during trip close process.
+This is a POST call made from GNet to sending party's webservice listener.  This is not configurable from your side, you will need to let the GRiDD team know when your webservice is ready, and our team will configure it in for you.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Format/type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>transactionId</td>
+<td>Transaction Id of the trip</td>
+<td>String</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Current Status Code of the Trip</td>
+<td>String</td>
+</tr>
+<tr>
+<td>totalAmount</td>
+<td>Total Amount of the trip, if trip is not CLOSED yet, this would be an estimate coming out of the other system</td>
+<td>String</td>
+</tr>
+<tr>
+<td>affiliateReservation.requesterId</td>
+<td>GNet ID of the sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>affiliateReservation.requesterResNo</td>
+<td>Reservation# of the sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>affiliateReservation.providerId</td>
+<td>GNet ID of the receiving company</td>
+<td>String</td>
+</tr>
+<tr>
+<td>affiliateReservation.providerResNo</td>
+<td>Confirmation# of the receiving company</td>
+<td>String</td>
+</tr>
+<tr>
+<td>affiliateReservation.action</td>
+<td>Last action requested by the sender</td>
+<td>String</td>
+</tr>
+<tr>
+<td>affiliateReservation.status</td>
+<td>if status=FAILED, the the notes field has the reason for the failure</td>
+<td>String</td>
+</tr>
+<tr>
+<td>affiliateReservation.notes</td>
+<td>failure message from last action requested</td>
+<td>String</td>
+</tr>
+<tr>
+<td>fees</td>
+<td>Array containing charge line items</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>fees.type</td>
+<td>Charge category assigned by GNet</td>
+<td>String</td>
+</tr>
+<tr>
+<td>fees.currency</td>
+<td>Currency of Charge item</td>
+<td>String</td>
+</tr>
+<tr>
+<td>fees.code</td>
+<td>Internal Charge Code used by provider</td>
+<td>String</td>
+</tr>
+<tr>
+<td>fees.description</td>
+<td>Description of the charge</td>
+<td>String</td>
+</tr>
+<tr>
+<td>fees.fee</td>
+<td>Charge Amount</td>
+<td>String</td>
+</tr>
+<tr>
+<td>vehicle.griddID</td>
+<td>GNet ID of the Vehicle</td>
+<td>String</td>
+</tr>
+<tr>
+<td>vehicle.vehicleId</td>
+<td>ID of the Vehicle</td>
+<td>String</td>
+</tr>
+<tr>
+<td>vehicle.vin</td>
+<td>VIN of the Vehicle</td>
+<td>String</td>
+</tr>
+<tr>
+<td>vehicle.passengerCount</td>
+<td>Passenger Capacity</td>
+<td>String</td>
+</tr>
+<tr>
+<td>vehicle.make</td>
+<td>Make of the Vehicle</td>
+<td>String</td>
+</tr>
+<tr>
+<td>vehicle.model</td>
+<td>Model of the Vehicle</td>
+<td>String</td>
+</tr>
+<tr>
+<td>vehicle.year</td>
+<td>Year the Vehicle</td>
+<td>String</td>
+</tr>
+<tr>
+<td>vehicle.mileage</td>
+<td>Mileage of the Vehicle</td>
+<td>String</td>
+</tr>
+<tr>
+<td>vehicle.active</td>
+<td>Not used</td>
+<td>String</td>
+</tr>
+<tr>
+<td>vehicle.plateNo</td>
+<td>Plate No of the Vehicle</td>
+<td>String</td>
+</tr>
+<tr>
+<td>vehicle.vColor</td>
+<td>Color of the Vehicle</td>
+<td>String</td>
+</tr>
+<tr>
+<td>chauffeur.griddID</td>
+<td>GNet ID of the Chauffuer</td>
+<td>String</td>
+</tr>
+<tr>
+<td>chauffeur.firstName</td>
+<td>Chauffuer first name</td>
+<td>String</td>
+</tr>
+<tr>
+<td>chauffeur.lastName</td>
+<td>Chauffuer last name</td>
+<td>String</td>
+</tr>
+<tr>
+<td>chauffeur.phones</td>
+<td>Chauffuer phones</td>
+<td>String</td>
+</tr>
+<tr>
+<td>chauffeur.phones.number</td>
+<td>Chauffuer phone number</td>
+<td>String</td>
+</tr>
+<tr>
+<td>chauffeur.phones.type</td>
+<td>phone number type</td>
+<td>String</td>
+</tr>
+<tr>
+<td>chauffeur.chauffeurId</td>
+<td>Chauffuer ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>chauffeur.picURL</td>
+<td>Chauffuer Picture URL</td>
+<td>String</td>
+</tr>
+</tbody>
+</table>
+</span></section></section><h3 id="reference" tabindex="-1" class="docs-hcAnchor docs-reference__title"><a class="docs-hcAnchor__link" aria-labelledby="reference" href="https://gnet.docs.apiary.io/#/reference"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Reference</h3><section class="docs-resource"><h3 id="reference/0/authentication-get-token" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/authentication-get-token" href="https://gnet.docs.apiary.io/#/reference/0/authentication-get-token"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Authentication Get Token</h3><p class="docs-copyPlainText">Token issued must be passed as a Header parameter for all GNet API calls.</p><section class="docs-transition"><div id="reference/0/authentication-get-token/get-token-2" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--post"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/authentication-get-token/get-token-2" href="https://gnet.docs.apiary.io/#/reference/0/authentication-get-token/get-token-2"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">getToken2</h4></div><div class="docs-transition__children"><div class="docs-httpTransactionList" role="list"><div id="reference/0/authentication-get-token/get-token-2/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--post" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/authentication-get-token/get-token-2/200?mc=reference%2F0%2Fauthentication-get-token%2Fget-token-2%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/authentication-release-token" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/authentication-release-token" href="https://gnet.docs.apiary.io/#/reference/0/authentication-release-token"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Authentication Release Token</h3><p class="docs-copyPlainText">Releases the Security Token.  Token stays active until it is released.</p><section class="docs-transition"><div id="reference/0/authentication-release-token/release-token" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--get"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/authentication-release-token/release-token" href="https://gnet.docs.apiary.io/#/reference/0/authentication-release-token/release-token"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">releaseToken</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">version</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">The value for version should be V1</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/authentication-release-token/release-token/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--get" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/authentication-release-token/release-token/200?mc=reference%2F0%2Fauthentication-release-token%2Frelease-token%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/send-reservation-request" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/send-reservation-request" href="https://gnet.docs.apiary.io/#/reference/0/send-reservation-request"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Send Reservation Request</h3><div class="docs-copyMarkdown"><p>This service is called by the Requester. This service is called for All NEW reservations, and Updates.
+The difference between NEW and UPDATE reservations are :</p>
+<ol>
+<li>affililateReservation.action can be set to : 'NEW' or 'UPDATE'</li>
+<li>TransactionId must be supplied with every payload</li>
+<li>if submitMode="wait" the API call will be synchronous and reponse time will be longer.  transactionId is always provided.  when submitMode="wait", a reservationId is also provided.</li>
+</ol>
+<p>Response will be a unique Transcation ID within the GRiDD Platform for reference.
+<code>Action="NEW"</code> &amp; <code>status=“NEW”</code> &amp; <code>Status : BOOKING_REQUEST</code>
+This is an Asynchronous service call.  Response can be a valid Transaction ID or an error caught by the rules engine, other responses will be provided via a callback at a later time.</p>
+</div><section class="docs-transition"><div id="reference/0/send-reservation-request/send-trip" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--post"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/send-reservation-request/send-trip" href="https://gnet.docs.apiary.io/#/reference/0/send-reservation-request/send-trip"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">sendTrip</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">version</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">The value for version should be V1</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/send-reservation-request/send-trip/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--post" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/send-reservation-request/send-trip/200?mc=reference%2F0%2Fsend-reservation-request%2Fsend-trip%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/get-reservation-by-transaction-id" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/get-reservation-by-transaction-id" href="https://gnet.docs.apiary.io/#/reference/0/get-reservation-by-transaction-id"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Get Reservation by Transaction ID</h3><p class="docs-copyPlainText">Gets the latest snapshop of the reservation on the Platform for the Requesting party.
+Querying by Transaction ID will ensure a unique instance of the request to be retrieved.</p><section class="docs-transition"><div id="reference/0/get-reservation-by-transaction-id/get-reservation-by-transaction-id" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--get"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/get-reservation-by-transaction-id/get-reservation-by-transaction-id" href="https://gnet.docs.apiary.io/#/reference/0/get-reservation-by-transaction-id/get-reservation-by-transaction-id"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">getReservationByTransactionId</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">TRANSACTIONID</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Transaction ID for the trip</span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">version</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Must be set to V1</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/get-reservation-by-transaction-id/get-reservation-by-transaction-id/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--get" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/get-reservation-by-transaction-id/get-reservation-by-transaction-id/200?mc=reference%2F0%2Fget-reservation-by-transaction-id%2Fget-reservation-by-transaction-id%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/get-reservation-by-reservation-id" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/get-reservation-by-reservation-id" href="https://gnet.docs.apiary.io/#/reference/0/get-reservation-by-reservation-id"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Get Reservation by Reservation Id</h3><p class="docs-copyPlainText">Requesters can get the latest snapshot of a reservation they submitted to the platform given the GRIDD ID and RERSERVAION ID of the Requester</p><section class="docs-transition"><div id="reference/0/get-reservation-by-reservation-id/get-reservation-by-reservation-id" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--get"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/get-reservation-by-reservation-id/get-reservation-by-reservation-id" href="https://gnet.docs.apiary.io/#/reference/0/get-reservation-by-reservation-id/get-reservation-by-reservation-id"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">getReservationByReservationId</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">GRIDDID</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">GRiDD ID</span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">RESERVATIONID</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText"><p>Reservation #</p></span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">version</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Must be set to V1</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/get-reservation-by-reservation-id/get-reservation-by-reservation-id/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--get" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/get-reservation-by-reservation-id/get-reservation-by-reservation-id/200?mc=reference%2F0%2Fget-reservation-by-reservation-id%2Fget-reservation-by-reservation-id%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/provider-system-update-by-reservation-no" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/provider-system-update-by-reservation-no" href="https://gnet.docs.apiary.io/#/reference/0/provider-system-update-by-reservation-no"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Provider System Update by Reservation No</h3><p class="docs-copyPlainText">This service is called by Provider Systems upon Status Code change.  Other information can be submitted when calling this service.</p><section class="docs-transition"><div id="reference/0/provider-system-update-by-reservation-no/provider-update-status-by-res-no" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--post"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/provider-system-update-by-reservation-no/provider-update-status-by-res-no" href="https://gnet.docs.apiary.io/#/reference/0/provider-system-update-by-reservation-no/provider-update-status-by-res-no"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">providerUpdateStatusByResNo</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">GRIDDID</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">GRiDD ID</span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">RESNO</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText"><p>Reservation #</p></span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">version</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Must be set to V1</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/provider-system-update-by-reservation-no/provider-update-status-by-res-no/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--post" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/provider-system-update-by-reservation-no/provider-update-status-by-res-no/200?mc=reference%2F0%2Fprovider-system-update-by-reservation-no%2Fprovider-update-status-by-res-no%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/provider-system-callback-by-transaction-id" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/provider-system-callback-by-transaction-id" href="https://gnet.docs.apiary.io/#/reference/0/provider-system-callback-by-transaction-id"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Provider System Callback by Transaction ID</h3><p class="docs-copyPlainText">Provider Systems call this endpoint when Status Code changes.</p><section class="docs-transition"><div id="reference/0/provider-system-callback-by-transaction-id/provider-update-status-by-transaction-id" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--post"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/provider-system-callback-by-transaction-id/provider-update-status-by-transaction-id" href="https://gnet.docs.apiary.io/#/reference/0/provider-system-callback-by-transaction-id/provider-update-status-by-transaction-id"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">providerUpdateStatusByTransactionId</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">TRANSACTIONID</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Transaction ID</span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">version</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Must be set to V1</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/provider-system-callback-by-transaction-id/provider-update-status-by-transaction-id/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--post" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/provider-system-callback-by-transaction-id/provider-update-status-by-transaction-id/200?mc=reference%2F0%2Fprovider-system-callback-by-transaction-id%2Fprovider-update-status-by-transaction-id%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/cancel-reservation-by-reservation" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/cancel-reservation-by-reservation" href="https://gnet.docs.apiary.io/#/reference/0/cancel-reservation-by-reservation"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Cancel Reservation by Reservation#</h3><div class="docs-copyMarkdown"><p>Cancels a Trip by GNet ID and Reservation#.  You must supply your GNet ID and and your reservation#.</p>
+</div><section class="docs-transition"><div id="reference/0/cancel-reservation-by-reservation/cancel-reservation-by-res" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--get"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/cancel-reservation-by-reservation/cancel-reservation-by-res" href="https://gnet.docs.apiary.io/#/reference/0/cancel-reservation-by-reservation/cancel-reservation-by-res"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">Cancel Reservation by Res#</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">GRIDDID</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">GNet ID of requester</span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">RESNO</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Reservation ID of requester</span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">version</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Must be set to V1</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/cancel-reservation-by-reservation/cancel-reservation-by-res/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--get" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/cancel-reservation-by-reservation/cancel-reservation-by-res/200?mc=reference%2F0%2Fcancel-reservation-by-reservation%2Fcancel-reservation-by-res%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/cancel-reservation-by-transaction-id" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/cancel-reservation-by-transaction-id" href="https://gnet.docs.apiary.io/#/reference/0/cancel-reservation-by-transaction-id"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Cancel Reservation by TransactionId</h3><p class="docs-copyPlainText">Cancels a Trip by Transaction ID.</p><section class="docs-transition"><div id="reference/0/cancel-reservation-by-transaction-id/cancel-reservation-by-transaction-id" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--post"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/cancel-reservation-by-transaction-id/cancel-reservation-by-transaction-id" href="https://gnet.docs.apiary.io/#/reference/0/cancel-reservation-by-transaction-id/cancel-reservation-by-transaction-id"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">Cancel Reservation by TransactionId</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">TRANSACTIONID</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">ID for reservation submitted</span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">version</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Must be set to V1</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/cancel-reservation-by-transaction-id/cancel-reservation-by-transaction-id/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--post" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/cancel-reservation-by-transaction-id/cancel-reservation-by-transaction-id/200?mc=reference%2F0%2Fcancel-reservation-by-transaction-id%2Fcancel-reservation-by-transaction-id%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/get-vehicle-chauffeur-location-by-transaction-id" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/get-vehicle-chauffeur-location-by-transaction-id" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-transaction-id"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Get Vehicle/Chauffeur Location by TransactionID</h3><section class="docs-transition"><div id="reference/0/get-vehicle-chauffeur-location-by-transaction-id/get-chauffeur-location-by-transaction-id" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--get"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/get-vehicle-chauffeur-location-by-transaction-id/get-chauffeur-location-by-transaction-id" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-transaction-id/get-chauffeur-location-by-transaction-id"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">getChauffeurLocationByTransactionId</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">TRANSACTIONID</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Transaction ID</span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">version</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Must be set to V1</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/get-vehicle-chauffeur-location-by-transaction-id/get-chauffeur-location-by-transaction-id/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--get" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-transaction-id/get-chauffeur-location-by-transaction-id/200?mc=reference%2F0%2Fget-vehicle-chauffeur-location-by-transaction-id%2Fget-chauffeur-location-by-transaction-id%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/get-vehicle-chauffeur-location-by-res-no" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/get-vehicle-chauffeur-location-by-res-no" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-res-no"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Get Vehicle/Chauffeur Location by ResNo</h3><div class="docs-copyMarkdown"><p>You can call this service using the REQUESTER GRIDD ID or PROVIDER GRIDD ID.<br>
+Make sure to use the GRIDD ID and Reservation # of one side, do not intermix.</p>
+</div><section class="docs-transition"><div id="reference/0/get-vehicle-chauffeur-location-by-res-no/get-chauffeur-location-by-res-no" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--get"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/get-vehicle-chauffeur-location-by-res-no/get-chauffeur-location-by-res-no" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-res-no/get-chauffeur-location-by-res-no"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">getChauffeurLocationByResNo</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">GRIDDID</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">GRiDD ID of the requester or provider</span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">TARGETRESNO</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText"><p>Reservation # of the requester or provider</p></span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">version</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Must be set to V1</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/get-vehicle-chauffeur-location-by-res-no/get-chauffeur-location-by-res-no/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--get" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-res-no/get-chauffeur-location-by-res-no/200?mc=reference%2F0%2Fget-vehicle-chauffeur-location-by-res-no%2Fget-chauffeur-location-by-res-no%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/get-vehicle-chauffeur-location-by-array-of-reservation-s" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/get-vehicle-chauffeur-location-by-array-of-reservation-s" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-array-of-reservation-s"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Get Vehicle/Chauffeur Location by Array of reservation #s</h3><div class="docs-copyMarkdown"><p>You can call this service using the REQUESTER GRIDD ID or PROVIDER GRIDD ID.<br>
+Make sure to use the GRIDD ID and Reservation # of one side, do not intermix.</p>
+</div><section class="docs-transition"><div id="reference/0/get-vehicle-chauffeur-location-by-array-of-reservation-s/get-chauffeur-location-by-res-no-array" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--get"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/get-vehicle-chauffeur-location-by-array-of-reservation-s/get-chauffeur-location-by-res-no-array" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-array-of-reservation-s/get-chauffeur-location-by-res-no-array"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">getChauffeurLocationByResNoArray</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">GRIDDID</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">GRiDD ID of the requester or provider</span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">RESLIST</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText"><p>Reservation #s seperated by commas</p></span></td></tr></tbody><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">version</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Must be set to V1</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/get-vehicle-chauffeur-location-by-array-of-reservation-s/get-chauffeur-location-by-res-no-array/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--get" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/get-vehicle-chauffeur-location-by-array-of-reservation-s/get-chauffeur-location-by-res-no-array/200?mc=reference%2F0%2Fget-vehicle-chauffeur-location-by-array-of-reservation-s%2Fget-chauffeur-location-by-res-no-array%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section><section class="docs-resource"><h3 id="reference/0/retry-transaction" tabindex="-1" class="docs-hcAnchor aui-h3 docs-resource__name"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/retry-transaction" href="https://gnet.docs.apiary.io/#/reference/0/retry-transaction"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a>Retry Transaction</h3><div class="docs-copyMarkdown"><p>This call issues a retry to a failed transaction.  A transaction can fail for many reasons outside of the data format. ex: a particular gateway may be down for maintenance reasons.</p>
+</div><section class="docs-transition"><div id="reference/0/retry-transaction/retry-transaction" tabindex="-1" class="docs-hcAnchor docs-transition__title docs-transition__title--get"><a class="docs-hcAnchor__link" aria-labelledby="reference/0/retry-transaction/retry-transaction" href="https://gnet.docs.apiary.io/#/reference/0/retry-transaction/retry-transaction"><i class="aui-i-link docs-hcAnchor__linkIcon" aria-hidden="true"></i></a><h4 class="docs-transition__titleText">retryTransaction</h4></div><div class="docs-transition__children"><section class="docs-hcHrefVariables"><table class="docs-hcHrefVariables__table"><caption class="docs-hcHrefVariables__title">URI Parameters</caption><tbody><tr class="docs-hcHrefVariable"><th class="docs-hcHrefVariable__name"><span class="docs-hcHrefVariable__nameText">TRANSACTIONID</span></th><td class="docs-hcHrefVariable__description"><span class="docs-hcHrefVariable__descriptionText">Reservation Transaction ID</span></td></tr></tbody></table></section><div class="docs-httpTransactionList" role="list"><div id="reference/0/retry-transaction/retry-transaction/200" tabindex="-1" class="docs-httpTransactionList__item docs-hcHttpTransaction" role="listitem"><a class="aui-grid-x aui-align-middle docs-hcHttpTransaction__header docs-hcHttpTransactionHeader docs-hcHttpTransactionHeader--get" role="button" aria-controls="docs-mcDrawer" aria-expanded="false" href="https://gnet.docs.apiary.io/#/reference/0/retry-transaction/retry-transaction/200?mc=reference%2F0%2Fretry-transaction%2Fretry-transaction%2F200"><div class="docs-hcHttpTransactionHeader__title aui-grid-cell auto">200 OK</div><i class="aui-i-arrow docs-hcHttpTransactionHeader__titleArrow" aria-hidden="true"></i></a></div></div></div></section></section></section></section></div><div id="docs-mcDrawer" class="docs-mcDrawer docs-defaultLayout__right" role="complementary" aria-hidden="true"><div class="docs-mcDrawer__content"><section class="docs-machineColumn"></section></div></div><div class="docs-mcDrawerOverlay" role="presentation"></div></div></div>
+
+<div class="hidden">
+  <div id="docsV4Urls">{"mock":"https://private-anon-39c725990c-gnet.apiary-mock.com/Platform.svc/","production":"https://gtest.grdd.net/Platform.svc/","proxy":"https://private-anon-39c725990c-gnet.apiary-proxy.com/Platform.svc/"}</div>
+ </div>
+  </div>
+
+<script>
+  if (!window.config) {
+    window.config = {};
+  }
+  window.csrf = "";
+
+  if (!window.Apiary) {
+    window.Apiary = {};
+  }
+  window.Apiary.PAGE = "API_DOCUMENTATION_V4";
+  window.Apiary.APPLICATION_DATA = {"apiName":"GNet Integration API","apiSubdomain":"gnet","networkInitialCache":"{\"https://jsapi.apiary.io/user\":{\"body\":{},\"rawBody\":\"\",\"headers\":{},\"statusCode\":404},\"https://jsapi.apiary.io/apis/gnet\":{\"body\":{\"name\":\"GNet Integration API\",\"apiSubdomain\":\"gnet\",\"owner\":{\"_id\":\"56fd86d1633b890b00ee89dc\",\"name\":\"swathigridd \"},\"subdomain\":\"gnet\",\"apiName\":\"GNet Integration API\"},\"rawBody\":\"\",\"headers\":{},\"statusCode\":200}}","applicationName":"docs","features":{"renderDocsV4ServerSide":true},"chromeExtensionId":null,"circleCi":null,"domain":"apiary.io","embedded":false,"isPreview":false,"environment":"production","logLevel":"info","port":"20300","ssl":null,"sslPort":null,"staticHostPath":"https://static.apiary.io/assets","staticMap":null,"titleSeparator":"\u00B7","isAnonymousApi":false,"supportEmail":"support@apiary.io","apiEditorFeatures":{"fasterAnnotations":1,"fasterAnnotationsTimeout":750,"fasterAnnotationsParserEndpoint":"https://helium.apiary-services.com/validate","fasterAnnotationsAlternativeParserEndpoint":"https://helium-alt.apiary-services.com/validate","useAlternativeParser":false},"headerAnnouncementBar":false,"ocp":1,"canCreateTeam":false};
+</script>
+
+<script src="./GNet Integration API · Apiary_files/main.js" crossorigin="anonymous"></script><script crossorigin="anonymous">window.webpackManifest = {"0":"0-61ebbf99.js","1":"1-61ebbf99.js","2":"2-61ebbf99.js","3":"3-61ebbf99.js","4":"4-61ebbf99.js","5":"5-61ebbf99.js","6":"6-61ebbf99.js","7":"7-61ebbf99.js","8":"8-61ebbf99.js","9":"9-61ebbf99.js","10":"10-61ebbf99.js","11":"11-61ebbf99.js","12":"12-61ebbf99.js","13":"13-61ebbf99.js","14":"14-61ebbf99.js","15":"15-61ebbf99.js","16":"16-61ebbf99.js","17":"17-61ebbf99.js","18":"18-61ebbf99.js","19":"19-61ebbf99.js","20":"20-61ebbf99.js","21":"21-61ebbf99.js","22":"22-61ebbf99.js","23":"23-61ebbf99.js","24":"24-61ebbf99.js","25":"25-61ebbf99.js","26":"26-61ebbf99.js","27":"27-61ebbf99.js","28":"28-61ebbf99.js","29":"29-61ebbf99.js","30":"30-61ebbf99.js","31":"31-61ebbf99.js"}</script><script src="./GNet Integration API · Apiary_files/vendor-61ebbf99.js" crossorigin="anonymous"></script><script src="./GNet Integration API · Apiary_files/docsV4-61ebbf99.js" crossorigin="anonymous"></script><script src="./GNet Integration API · Apiary_files/Apiary.renderApiaryUI" crossorigin="use-credentials"></script>
+
+
+</body></html>
