@@ -1,0 +1,53 @@
+{
+  "transactionId": "c1615a0c-c10d-4f2a-807e-56498f15b7dc",
+  "status": "ON_LOCATION",
+  "affiliateReservation": {
+    "updateTime": null,
+    "notes": "",
+    "requesterId": "sanbox",
+    "requesterResNo": "1715267595",
+    "providerId": "gnettest",
+    "providerResNo": "638508392579418967",
+    "providerResCode": null,
+    "action": "NEW",
+    "submissionTarget": null,
+    "status": "ON_LOCATION"
+  },
+  "fees": null,
+  "vehicle": {
+    "griddID": null,
+    "vehicleId": "1234",
+    "vin": null,
+    "passengerCount": null,
+    "vehicleType": null,
+    "make": "Benz",
+    "model": "EQS",
+    "year": null,
+    "mileage": null,
+    "active": null,
+    "plateNo": "1234",
+    "vColor": null
+  },
+  "location": null,
+  "chauffeur": {
+    "griddID": "gnettest",
+    "email": null,
+    "active": null,
+    "firstName": "Alex",
+    "lastName": "smith",
+    "phones": [
+      {
+        "number": "999999999",
+        "type": "Mobile",
+        "attributes": {
+          "visibleToPassenger": "",
+          "sendNotification": ""
+        }
+      }
+    ],
+    "chauffeurId": "Alex",
+    "picURL": null
+  },
+  "totalAmount": "120",
+  "providerNote": null
+}
