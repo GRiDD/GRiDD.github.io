@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to GNet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo img {
+            width: 120px;
+            height: auto;
+        }
+        
+        .logo-placeholder {
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            background: #2E7D32;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+        
+        .content {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .content p {
+            margin-bottom: 20px;
+        }
+        
+        .intro-text {
+            margin-bottom: 30px;
+        }
+        
+        .product-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .product-section h3 {
+            color: #2E7D32;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .product-description {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .product-item h4 {
+            color: #2E7D32;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        
+        .product-item p {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .video-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            margin-top: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #45a049;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+        }
+        
+        .btn-secondary:hover {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .footer p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .signature {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            .email-container {
+                padding: 20px;
+            }
+            
+            .product-description {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .btn {
+                display: block;
+                margin: 10px 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="logo">
+            <div class="logo-placeholder">GNET</div>
+        </div>
+        
+        <h1>Welcome to GNet!</h1>
+        
+        <div class="content">
+            <div class="intro-text">
+                <p>Dear valued partner,</p>
+                
+                <p>Welcome to <strong>GNet</strong> - your gateway to the global ground transportation network. We're excited to have you join our growing community of transportation professionals.</p>
+            </div>
+            
+            <div class="product-section">
+                <h3>About GNet</h3>
+                <div class="product-description">
+                    <div class="product-item">
+                        <h4>GNet Platform</h4>
+                        <p>A universal electronic data-transfer hub for ground transportation companies. It bridges any dispatch systems, so booking details and live status updates flow automatically between partners.</p>
+                    </div>
+                    <div class="product-item">
+                        <h4>GNet Connect</h4>
+                        <p>A global marketplace and directory where operators showcase their businesses. Set up your profile so travel buyers and fellow operators can discover and partner with you.</p>
+                    </div>
+                </div>
+                <p><em>Together, GNet Platform powers the data exchange, while GNet Connect powers discovery and partnership—delivering a fully connected, friction-free ecosystem for ground transportation worldwide.</em></p>
+            </div>
+            
+            <div class="video-section">
+                <p><strong>Watch this quick introduction to see GNet in action:</strong></p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ONCzkbr-dXo" title="GNet Introduction Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <p>To get started, access your dashboard to set up your profile and begin exploring partnership opportunities:</p>
+        </div>
+        
+        <div class="button-container">
+            <a href="https://connect.grdd.net/dashboard" class="btn">Access Dashboard</a>
+            <a href="#" class="btn btn-secondary">Reset Password</a>
+        </div>
+        
+        <div class="footer">
+            <p>If you have any questions, please don't hesitate to contact our support team at <strong>support@grdd.net</strong></p>
+        </div>
+        
+        <div class="signature">
+            <p>Thank you,<br>
+            <strong>GRiDD Team</strong></p>
+        </div>
+    </div>
+</body>
+</html>
