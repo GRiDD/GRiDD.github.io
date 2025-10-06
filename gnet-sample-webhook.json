@@ -1,53 +1,87 @@
 {
-  "transactionId": "c1615a0c-c10d-4f2a-807e-56498f15b7dc",
-  "status": "ON_LOCATION",
-  "affiliateReservation": {
-    "updateTime": null,
-    "notes": "",
-    "requesterId": "sandbox",
-    "requesterResNo": "1715267595",
-    "providerId": "gnettest",
-    "providerResNo": "638508392579418967",
-    "providerResCode": null,
-    "action": "NEW",
-    "submissionTarget": null,
-    "status": "ON_LOCATION"
-  },
-  "fees": null,
-  "vehicle": {
-    "griddID": null,
-    "vehicleId": "1234",
-    "vin": null,
-    "passengerCount": null,
-    "vehicleType": null,
-    "make": "Benz",
-    "model": "EQS",
-    "year": null,
-    "mileage": null,
-    "active": null,
-    "plateNo": "1234",
-    "vColor": null
-  },
-  "location": null,
-  "chauffeur": {
-    "griddID": "gnettest",
-    "email": null,
-    "active": null,
-    "firstName": "Alex",
-    "lastName": "smith",
-    "phones": [
-      {
-        "number": "999999999",
-        "type": "Mobile",
-        "attributes": {
-          "visibleToPassenger": "",
-          "sendNotification": ""
+    "transactionId": "11111111-2e7f-47a7-acb8-fc9136916c32",
+    "status": "ASSIGNED",
+    "totalAmount": "120.00",
+    "affiliateReservation": {
+        "updateTime": null,
+        "notes": null,
+        "requesterId": "gnettest",
+        "requesterResNo": "1723840",
+        "providerId": "latest",
+        "providerResNo": "58689",
+        "providerResCode": null,
+        "action": "UPDATE",
+        "submissionTarget": null,
+        "status": "BOOKING_REQUEST"
+    },
+    "fees": [
+        {
+            "type": "EXPENSE",
+            "currency": "USD",
+            "percent": null,
+            "code": "fixedcharge",
+            "description": "Early AM Fee/late night",
+            "reimbursable": null,
+            "fee": "15.00"
+        },
+        {
+            "type": "EXPENSE",
+            "currency": "USD",
+            "percent": null,
+            "code": "fixedcharge",
+            "description": "Meet  Greet",
+            "reimbursable": null,
+            "fee": "25.00"
+        },
+        {
+            "type": "EXPENSE",
+            "currency": "USD",
+            "percent": null,
+            "code": "percentagecharge",
+            "description": "Driver Gratuity",
+            "reimbursable": null,
+            "fee": "3.00"
+        },
+        {
+            "type": "EXPENSE",
+            "currency": "USD",
+            "percent": null,
+            "code": "estimatehrs",
+            "description": "Estimated Hours",
+            "reimbursable": null,
+            "fee": "1.50000"
         }
-      }
     ],
-    "chauffeurId": "Alex",
-    "picURL": null
-  },
-  "totalAmount": "120",
-  "providerNote": null
+    "vehicle": {
+        "griddID": null,
+        "vehicleId": "223",
+        "vin": null,
+        "passengerCount": null,
+        "vehicleType": {
+            "type": "SEDAN"
+        },
+        "make": "3 Pax Sedan (not editable in trial)",
+        "model": "#10 Chrsler",
+        "year": null,
+        "mileage": null,
+        "active": null,
+        "plateNo": null,
+        "vColor": null
+    },
+    "chauffeur": {
+        "griddID": "fasttrakcloud",
+        "email": "zaza@grdd.net",
+        "active": null,
+        "firstName": "1-GRIDD-DriverAPP",
+        "lastName": " Joey ZaZa",
+        "phones": [
+            {
+                "number": "323.222.1111",
+                "type": "mobile",
+                "attributes": null
+            }
+        ],
+        "chauffeurId": "zaza@grdd.net",
+        "picURL": null
+    }
 }
