@@ -1,0 +1,273 @@
+{
+  "info": {
+    "_postman_id": "8fd99e37-d096-4c0e-a7db-721451a3cba9",
+    "name": "GNET",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "9497250",
+    "_collection_link": "https://go.postman.co/collection/9497250-8fd99e37-d096-4c0e-a7db-721451a3cba9?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GetToken",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "content-type": true,
+          "user-agent": true,
+          "accept": true,
+          "accept-encoding": true,
+          "connection": true
+        }
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"pw\":\"<password>\",\n\t\"uid\":\"<user_id>\"\n}"
+        },
+        "url": {
+          "raw": "https://api.grdd.net/Platform.svc/getToken2",
+          "protocol": "https",
+          "host": [
+            "api",
+            "grdd",
+            "net"
+          ],
+          "path": [
+            "Platform.svc",
+            "getToken2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SendTrip",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "content-type": true,
+          "connection": true,
+          "accept-encoding": true,
+          "accept": true,
+          "user-agent": true
+        }
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "token",
+            "value": "{{API_TOKEN}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"reservationDate\": \"-08:00\",\n    \"affiliateReservation\": {\n        \"action\": \"NEW\",\n        \"status\": \"BOOKING_REQUEST\",\n        \"requesterId\": \"{{requesterId}}\",\n        \"requesterResNo\": \"123456\",\n        \"providerId\": \"{{providerId}}\"\n    },\n    \"reservationType\": \"REGULAR\",\n    \"status\": \"BOOKING_REQUEST\",\n    \"runType\": \"Airport\",\n    \"passengerCount\": \"1\",\n    \"totalTripDuration\": \"\",\n    \"eventName\": \"\",\n    \"passengers\": [\n        {\n            \"firstName\": \"Alex\",\n            \"lastName\": \"Jone\",\n            \"email\": \"test@example.com\",\n            \"phoneNumber\": \"+15555555500\",\n            \"phones\": [\n                {\n                    \"number\": \"+15555555500\",\n                    \"type\": \"mobile\"\n                }\n            ]\n        }\n    ],\n    \"namesignInstructions\": \"\",\n    \"locations\": {\n        \"pickup\": {\n            \"locationType\": \"airport\",\n            \"address\": \"LAX\",\n            \"landmark\": \"LAX Los Angeles Intl\",\n            \"country\": \"United States\",\n            \"flightInfo\": {\n                \"flightNumber\": \"200\",\n                \"airlineCode\": \"UA\"\n            },\n            \"meetAndGreet\": \"False\",\n            \"specialInstructions\": \"\",\n            \"time\": \"2024-01-24T09:32:28\"\n        },\n        \"dropOff\": {\n            \"locationType\": \"address\",\n            \"address\": \"1001 Rose Bowl Dr, Pasadena, CA 91103, USA\",\n            \"address1\": \"1001 Rose Bowl Drive\",\n            \"city\": \"Pasadena\",\n            \"state\": \"CA\",\n            \"zipCode\": \"91103\",\n            \"lat\": 34.1613284,\n            \"lon\": -118.1676462,\n            \"country\": \"US\",\n            \"landmark\": \"Rose Bowl Stadium\",\n            \"specialInstructions\": \"\"\n        }\n    },\n    \"specialInstructions\": \"\",\n    \"sourceVendor\": \"GRIDD\",\n    \"origination\": \"gBook\",\n    \"notes\": [],\n    \"preferredVehicleType\": \"SEDAN\",\n    \"submitMode\": \"WAIT\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.grdd.net/Platform.svc/sendTrip/v1",
+          "protocol": "https",
+          "host": [
+            "api",
+            "grdd",
+            "net"
+          ],
+          "path": [
+            "Platform.svc",
+            "sendTrip",
+            "v1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cancel Trip",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Successful DELETE request\", function () {",
+              "    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+              "});",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "accept-encoding": true,
+          "accept": true,
+          "user-agent": true,
+          "content-type": true
+        }
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-grdd-status",
+            "value": "FAILED",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "token",
+            "value": "{{API_TOKEN}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.grdd.net/Platform.svc/cancelTripByTransactionId/<transactionid>/v1",
+          "protocol": "https",
+          "host": [
+            "api",
+            "grdd",
+            "net"
+          ],
+          "path": [
+            "Platform.svc",
+            "cancelTripByTransactionId",
+            "<transactionid>",
+            "v1"
+          ]
+        },
+        "description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+      },
+      "response": []
+    },
+    {
+      "name": "Update GPS Location",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"chfName\": \"Alex Jones\",\n    \"driverId\": \"123456\",\n    \"griddid\": \"{{providerId}}\",\n    \"internalBookingId\": \"123456\",\n    \"latitude\": \"40.74\",\n    \"locationDateTime\": \"2024-01-23T18:52:34\",\n    \"longitude\": \"-100.56\",\n    \"phoneNo\": \"+15555555555\",\n    \"transactionId\": \"<>\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://location.grdd.net/api/GGPS.svc/saveGPScache",
+          "protocol": "https",
+          "host": [
+            "location",
+            "grdd",
+            "net"
+          ],
+          "path": [
+            "api",
+            "GGPS.svc",
+            "saveGPScache"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Partners",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{API_TOKEN}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://core.grdd.net/api/partner/[griddid]?format={format}",
+          "protocol": "https",
+          "host": [
+            "core",
+            "grdd",
+            "net"
+          ],
+          "path": [
+            "api",
+            "partner",
+            "[griddid]"
+          ],
+          "query": [
+            {
+              "key": "format",
+              "value": "{format}"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "API_TOKEN",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "requesterId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "providerId",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
